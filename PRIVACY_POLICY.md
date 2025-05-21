@@ -43,7 +43,7 @@ Changes to this Privacy Policy are effective when they are posted on this page.
 
 ## 6. Contact Us
 
-If you have any questions about this Privacy Policy, please feel free to open an issue on our GitHub repository: [Link to your GitHub repository issues page, e.g., https://github.com/RomsKidd/tab-title-tamer/issues]
+If you have any questions about this Privacy Policy, please feel free to open an issue on our GitHub repository: [https://github.com/RomsKidd/tab-title-tamer/issues]
 
 ---
 Made with ❤️ by RomsKidd
