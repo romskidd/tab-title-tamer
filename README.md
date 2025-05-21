@@ -1,5 +1,5 @@
-# T![promo](https://github.com/user-attachments/assets/e8d58811-06ce-4cbf-90ec-24205c5d0b0c)
-ab Title Tamer
+![promo](https://github.com/user-attachments/assets/e8d58811-06ce-4cbf-90ec-24205c5d0b0c)
+# Tab Title Tamer
 
 **Tame those annoying tab titles and reclaim control of your tab bar!**
 
