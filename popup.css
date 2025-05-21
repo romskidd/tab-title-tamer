@@ -1,0 +1,196 @@
+body {
+    font-family: 'Inter', sans-serif;
+    width: 300px;
+    padding: 0; 
+    background-color: #fc8c03; /* User's Orange for the main background */
+    color: #1c1c1c; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px; /* Increased min-height for new link */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% - 30px); 
+    background-color: #f0f0f0; /* Light grey for the content area */
+    margin: 15px; 
+    padding: 20px 15px 15px 15px; /* Adjusted bottom padding */
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35); 
+    border: 1px solid #a0a0a0; /* Lighter medium grey border */
+}
+
+#popup-title {
+    font-size: 24px; 
+    font-weight: 800; 
+    color: #fc8c03; 
+    margin-top: 0;
+    margin-bottom: 15px; 
+    text-transform: uppercase;
+    text-shadow: 
+        0px 0px 2px rgba(0, 0, 0, 0.7), 
+        1px 2px 3px rgba(0, 0, 0, 0.5);  
+    letter-spacing: 0.5px; 
+}
+
+.site-info-box {
+    background-color: #ffffff; 
+    padding: 8px 15px; 
+    border-radius: 8px;
+    margin-bottom: 18px; 
+    width: 90%; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0; 
+    text-align: center; 
+}
+
+.site-info-label {
+    display: block; 
+    font-size: 11px; 
+    color: #777777; 
+    margin-bottom: 3px; 
+    font-weight: 500;
+}
+
+#site-hostname {
+    display: block; 
+    font-size: 14px; 
+    font-weight: 600;
+    color: #1c1c1c; 
+    word-break: break-all; 
+    line-height: 1.3; 
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px; 
+    background-color: #ffffff;
+    border-radius: 30px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#toggle-status {
+    margin-left: 12px;
+    font-size: 15px; 
+    font-weight: 600; 
+    color: #333333;
+}
+
+.description {
+    font-size: 12px;
+    color: #555555;
+    margin-top: 5px;
+    line-height: 1.5;
+    max-width: 260px;
+    margin-bottom: 15px; /* Added margin before support link */
+}
+
+.support-link-container {
+    margin-top: auto; 
+    padding-top: 10px; 
+    border-top: 1px solid #e0e0e0; 
+    width: 100%;
+}
+
+.support-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px; /* Slightly smaller text */
+    color: #888888; /* Lighter grey for less emphasis */
+    text-decoration: none;
+    padding: 5px 0;
+    text-transform: uppercase; /* Text in uppercase */
+}
+
+.support-link:hover,
+.support-link:focus { /* Added focus state for accessibility */
+    color: #fc8c03; 
+    text-decoration: none; /* Keep no underline on hover/focus for cleaner look */
+}
+
+.support-link:hover .tea-icon,
+.support-link:focus .tea-icon {
+    fill: #fc8c03; /* Orange icon on hover/focus */
+}
+
+
+.tea-icon {
+    width: 16px; /* Slightly smaller icon */
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    fill: #888888; /* Lighter grey for icon */
+    transition: fill 0.2s ease-in-out; /* Smooth transition for icon color */
+}
+
+
+/* The switch - styling to match orange theme */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px; 
+    height: 30px; 
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #b0b0b0; 
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px; 
+    width: 22px; 
+    left: 3px;  
+    bottom: 3px; 
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider {
+    background-color: #fc8c03; 
+    border-color: #e07b00; 
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 2px #fc8c03, 0 0 4px #fc8c03; 
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+.slider.round {
+    border-radius: 30px; 
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
