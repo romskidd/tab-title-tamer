@@ -1,3 +1,4 @@
+![promo](https://github.com/user-attachments/assets/21c06ea9-030a-4af4-9f19-a2b431f2cc83)
 # Tab Title Tamer
 
 **Tame those annoying tab titles and reclaim control of your tab bar!**
