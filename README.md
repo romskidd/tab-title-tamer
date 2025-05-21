@@ -59,8 +59,6 @@ Tab Title Tamer is designed with your privacy in mind.
 * The only settings saved are your enable/disable preferences for each website. These preferences are stored **locally** in your browser using the `browser.storage.local` (or `chrome.storage.local`) API.
 * No data is sent to any external servers.
 
-For more details, you can create a `PRIVACY_POLICY.md` file in this repository.
-
 ## Contributing
 
 Contributions are welcome! If you have ideas for improvements, bug reports, or would like to contribute code:
