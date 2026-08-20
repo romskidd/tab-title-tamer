@@ -1,6 +1,6 @@
-# Tab Title Tamer — Privacy Policy
+# Tab Title Tamer - Privacy Policy
 
-_Last updated: August 17, 2026_
+_Last updated: August 19, 2026_
 
 Tab Title Tamer is a browser extension that lets you control how your tabs are
 displayed: freeze tab titles, remove notification counts, set custom titles,
@@ -12,7 +12,7 @@ All of your configuration is stored **locally in your browser** using the
 extension storage API:
 
 - your per-site rules (which sites to tame, custom titles, title conditions,
-  whether to remove counts, held or custom tab icons — custom icons are kept as
+  whether to remove counts, held or custom tab icons; custom icons are kept as
   small local image data);
 - your global preferences (default behaviors, theme);
 - your Pro/trial status.
@@ -28,12 +28,24 @@ the pages you visit, entirely inside your browser, in order to apply the rules
 you defined. None of this is transmitted anywhere, logged, or stored beyond
 the rule data described above.
 
+## The one thing the extension fetches from a website
+
+When you put a colored marker on a site's icon, the marker has to be drawn on
+top of that site's real icon, so the extension asks the site for the icon its
+own page declares, and composes the two into a single image inside your
+browser. That request goes to the site you are on and to nowhere else; the
+result is stored locally with your rule and is never uploaded.
+
+This is deliberately fenced in: a page can only make the extension fetch a
+private or local network address when that address is the page's **own** host,
+so a website cannot use the extension to look at anything on your network.
+
 ## Payments (Pro)
 
 Pro licenses are sold through **ExtensionPay** (extensionpay.com), which manages
 subscriptions on top of **Stripe**, the payment processor. When you buy Pro or
 start a trial, the purchase happens on their site: your email address and
-payment details are given by you to them — **the extension itself never sees
+payment details are given by you to them: **the extension itself never sees
 your payment information**. The extension only contacts extensionpay.com to
 check the license status of your account. ExtensionPay's own privacy policy
 applies to the data you give them: https://extensionpay.com/privacy
@@ -47,12 +59,12 @@ have never bought anything, I have no address for you at all.
 That address is the only personal data I hold, and I use it to:
 
 - identify a license and answer support or billing questions;
-- occasionally write to you — to ask what you think of the extension, or to
+- occasionally write to you, to ask what you think of the extension, or to
   mention another extension I have made myself.
 
 I never sell it, never share it with anyone, and never pass it to an advertiser
 or an analytics service. Every message I send says how to make them stop, and
-writing to romskidd@gmail.com works just as well — as does asking me to delete
+writing to romskidd@gmail.com works just as well, as does asking me to delete
 your address entirely.
 
 ## What we do NOT do
@@ -61,7 +73,7 @@ your address entirely.
 - No browsing history is collected.
 - No data is sold or shared with third parties.
 - No ads.
-- No mailing list of people who have not bought anything — the extension never
+- No mailing list of people who have not bought anything: the extension never
   asks for an email address, and never sends one anywhere.
 
 ## Changes
